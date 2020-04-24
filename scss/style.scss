@@ -30,8 +30,9 @@ main{
     max-width: 100vw;
     overflow-x: hidden;
     margin-top: -50px;
+    background-color: #fff;
 
     @media screen and (max-width: $bp-LG){
-        margin-top: -5px;
+        margin-top: -8px;
     }
 }

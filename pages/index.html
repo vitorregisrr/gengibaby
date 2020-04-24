@@ -194,7 +194,7 @@
 
             <section id="video-about" class="video-about">
                 <div class="container">
-                    <div class="video-about__content">
+                    <div class="video-about__content wow zoomIn">
                         <video
                             poster="../images/backgrounds/bg-video.png"
                             id="about-video"
@@ -215,14 +215,18 @@
                     alt=""
                     class="como-acontece-curveb">
                 <div class="container">
-                    <h2 class="como-acontece__title">
+                    <h2 class="como-acontece__title wow zoomIn">
                         <span class="star mr-3"></span>Como acontece o desenvolvimento dos dentes do bebê?
                         <span class="star"></span>
                     </h2>
 
                     <div class="row como-acontece__list">
                         <div class="col-md-4">
-                            <button class="como-acontece__item" data-target="como-acontece" data-tab="#tab-1">
+                            <button
+                                class="como-acontece__item wow fadeIn"
+                                data-wow-delay="0.1s"
+                                data-target="como-acontece"
+                                data-tab="#tab-1">
                                 <div>
                                     <div class="como-acontece__item-icon">
                                         <img src="../images/ico/botoes-dentes.png" alt="" class="img">
@@ -232,30 +236,40 @@
                                     </div>
                                 </div>
                                 <h1 class="como-acontece__item-title">
-                                   <span> Botoes Dentarios</span>
+                                    <span>
+                                        Botoes Dentarios</span>
                                 </h1>
                             </button>
                         </div>
                         <div class="col-md-4">
-                            <button class="como-acontece__item" data-target="como-acontece" data-tab="#tab-2">
+                            <button
+                                class="como-acontece__item wow fadeIn"
+                                data-wow-delay="0.3s"
+                                data-target="como-acontece"
+                                data-tab="#tab-2">
                                 <div>
                                     <div class="como-acontece__item-icon">
-                                        <img src="../images/ico/botoes-dentes.png" alt="" class="img">
+                                        <img src="../images/ico/primeiros-dentinhos.png" alt="" class="img">
                                         <div class="number n-2">
                                             2
                                         </div>
                                     </div>
                                 </div>
                                 <h1 class="como-acontece__item-title">
-                                   <span> Primeiros Dentinhos</span>
+                                    <span>
+                                        Primeiros Dentinhos</span>
                                 </h1>
                             </button>
                         </div>
                         <div class="col-md-4">
-                            <button class="como-acontece__item" data-target="como-acontece" data-tab="#tab-3">
+                            <button
+                                class="como-acontece__item wow fadeIn"
+                                data-wow-delay="0.6s"
+                                data-target="como-acontece"
+                                data-tab="#tab-3">
                                 <div>
                                     <div class="como-acontece__item-icon">
-                                        <img src="../images/ico/botoes-dentes.png" alt="" class="img">
+                                        <img src="../images/ico/dentes-leite.png" alt="" class="img">
                                         <div class="number n-3">
                                             3
                                         </div>
@@ -268,7 +282,7 @@
                         </div>
                     </div>
                     <div class="como-acontece__tabs">
-                        <div id="tab-1" class="como-acontece__tab" data-active="true">
+                        <div id="tab-1" class="como-acontece__tab" data-active="false">
                             <p class="como-acontece__tab-desc">
                                 Durante a gravidez, o bebê adquire os chamados botões dentários, as fundações
                                 dos dentes de leite (ou dentes decíduos, no termo técnico). Esses botões começam
@@ -293,7 +307,7 @@
 
                             </p>
                         </div>
-                        <div id="tab-2" class="como-acontece__tab" data-active="true">
+                        <div id="tab-2" class="como-acontece__tab" data-active="false">
                             <p class="como-acontece__tab-desc">
                                 Em bebês mais precoces, o primeiro dentinho (normalmente um dos incisivos
                                 centrais inferiores) pode irromper já aos 3 meses de idade, enquanto outros
@@ -317,7 +331,7 @@
 
                             </p>
                         </div>
-                        <div id="tab-3" class="como-acontece__tab" data-active="true">
+                        <div id="tab-3" class="como-acontece__tab" data-active="false">
                             <p class="como-acontece__tab-desc">
                                 A primeira dentição completa do bebê tem
                                 <b>20 dentinhos</b>, 10 deles localizados na arcada superior da boca e 10 na
@@ -346,29 +360,32 @@
 
             <section id="primeiros-dentinhos" class="dentinhos" data-current="dentinhos-1">
                 <div class="container">
-                    <h2 class="dentinhos__title">
-                        <span class="star"></span>
-                        Primeiros Dentinhos
-                        <span class="star"></span>
-                    </h2>
+                    <div class="d-flex justify-content-center">
+                        <h2 class="dentinhos__title wow zoomIn">
+                            <span class="star mr-4"></span>Primeiros Dentinhos<span class="star ml-3"></span>
+                        </h2>
+                    </div>
 
                     <div class="dentinhos__header">
-                        <h3 class="dentinhos__header-title">
+                        <h3 class="dentinhos__header-title wow fadeIn" data-wow-delay="0.2s">
                             Sintomas
                         </h3>
-                        <div class="dentinhos__buttons">
-                            <button class="dentinhos__btn" data-target="#dentinhos-1">
+                        <div class="dentinhos__buttons wow fadeInUp" data-wow-delay="0.4s">
+                            <button class="dentinhos__btn left active" data-target="dentinhos"  data-tab="#dentinhos-1">
                                 Coceira
                             </button>
-                            <button class="dentinhos__btn" data-target="#dentinhos-2">
+                            <div class="dentinhos__buttons-divisor">
+                                <span></span>
+                            </div>
+                            <button class="dentinhos__btn right" data-target="dentinhos"  data-tab="#dentinhos-2">
                                 Salivação
                             </button>
                         </div>
                     </div>
 
                     <div class="dentinhos__main">
-                        <div data-tab="dentinhos-1" class="dentinhos__main-item row">
-                            <div class="col-lg-6">
+                        <div id="dentinhos-1" class="dentinhos__main-item row" data-active="true">
+                            <div class="col-lg-6 wow fadeInLeft order-last order-lg-first" data-wow-delay="0.5s">
                                 <h4 class="dentinhos__main-title">
                                     Coceira
                                 </h4>
@@ -388,9 +405,27 @@
                                 </div>
 
                             </div>
-                            <div class="col-lg-6">
-                                <div class="dentinhos-img">
+                            <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                                <div class="dentinhos__main-img">
                                     <img src="../images/thumbs/dentinhos-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="dentinhos-2" class="dentinhos__main-item row" data-active="false">
+                            <div class="col-lg-6 order-last order-lg-first" data-wow-delay="0.5s">
+                                <h4 class="dentinhos__main-title">
+                                    Salivação
+                                </h4>
+                                <div class="dentinhos__main-caption">
+                                    <p>
+                                        O aumento da salivação faz parte dos sintomas que caracterizam a fase de aparecimento dos dentes. Ao mesmo tempo, como a criança está em plena fase oral, em que leva tudo à boca, o estímulo à salivação torna-se ainda mais intenso neste período.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" data-wow-delay="0.5s">
+                                <div class="dentinhos__main-img img-2">
+                                    <img src="../images/thumbs/dentinhos-2.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -405,11 +440,13 @@
                         <div class="dentinhos__navs">
                             <button
                                 class="dentinhos__navs-item left"
-                                data-target="#dentinhos-0"
+                                data-target="dentinhos"
+                                data-tab="#dentinhos-1"
                                 data-disabled="true"></button>
                             <button
                                 class="dentinhos__navs-item right"
-                                data-target="#dentinhos-1"
+                                data-target="dentinhos"
+                                data-tab="#dentinhos-2"
                                 data-disabled="false"></button>
                         </div>
                     </div>
@@ -545,7 +582,7 @@
                                 aria-controls="faq-1">
                                 Qual o papel do hialuronato de sodio na formulacao?
                             </button>
-                            <div id="faq-1" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-1" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     O hialuronato de sódio é uma substância natural, produzida por nosso organismo.
                                     Ele apresenta propriedades higroscópicas (ou seja, facilita a incorporação de
@@ -565,7 +602,7 @@
                                 aria-controls="faq-2">
                                 para que serve gengibaby®?
                             </button>
-                            <div id="faq-2" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-2" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     É indicado para o alívio da coceira e dos incômodos decorrentes de inflamações
                                     gengivais, comuns no surgimento da primeira dentição de crianças.
@@ -582,7 +619,7 @@
                                 aria-controls="faq-3">
                                 Qual o papel do Xilitol na formulacao?
                             </button>
-                            <div id="faq-3" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-3" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     O xilitol é um adoçante natural, obtido de fibras vegetais, com ação
                                     antibacteriana, que promove condições ideais para a dentição do bebê e evita o
@@ -600,7 +637,7 @@
                                 aria-controls="faq-4">
                                 Gengi Baby® e seguro para criancas e bebes de todas as idades?
                             </button>
-                            <div id="faq-4" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-4" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     Por ser um produto totalmente natural, é absolutamente seguro para todas as
                                     idades.
@@ -617,7 +654,7 @@
                                 aria-controls="faq-5">
                                 Qual o risco de intoxicacao caso a CRIANcA engula o produto?
                             </button>
-                            <div id="faq-5" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-5" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     Não existe risco de intoxicação, devido às características do produto
                                     (substâncias que fazem parte do organismo e adoçante não absorvível), de modo
@@ -635,7 +672,7 @@
                                 aria-controls="faq-6">
                                 Posso associar outros tratamentos com o Gengi Baby®?
                             </button>
-                            <div id="faq-6" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-6" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     Sim, é possível associar outros tratamentos com o uso de Gengi Baby®, sem
                                     qualquer problema.
@@ -652,7 +689,7 @@
                                 aria-controls="faq-7">
                                 Por que Gengi Baby® e considerado natural?
                             </button>
-                            <div id="faq-7" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-7" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     Porque o hialuronato de sódio é sintetizado pelo organismo humano e o xilitol é
                                     obtido de fibras vegetais, portanto, ambos de origem natural.
@@ -669,7 +706,7 @@
                                 aria-controls="faq-8">
                                 Qual a quantidade MaXIMA DE GENGI BABY® QUE POSSO USAR POR DIA?
                             </button>
-                            <div id="faq-8" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-8" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     Por se tratar de produto sem nenhuma toxicidade, em princípio não há limitação
                                     para seu uso. No entanto, a recomendação normal é de 2 vezes ao dia.
@@ -686,7 +723,7 @@
                                 aria-controls="faq-9">
                                 Gengi Baby® possui anestesico em sua formulacao?
                             </button>
-                            <div id="faq-9" class="collapse show" data-parent="#faq-accordion">
+                            <div id="faq-9" class="collapse" data-parent="#faq-accordion">
                                 <div class="faq__body">
                                     Não, Gengi Baby® é um produto natural que não contém anestésico.
                                 </div>

@@ -1,55 +1,50 @@
-.btn-transparent{
+.btn-transparent {
     background: none !important;
     border: none;
     outline: none;
     font-weight: bold;
     cursor: pointer;
-    
-    &:active, &:focus{
+    &:active,
+    &:focus {
         border: none;
         outline: none;
     }
 }
 
-.btn-secondary{
+.btn-secondary {
     position: relative;
     font-size: 20px;
     font-family: 'poppins-sb';
-    padding: 10px 30px; 
+    padding: 10px 30px;
     border-radius: 30px;
     background-color: $color-secondary;
     color: #fff;
     text-transform: uppercase;
     @include transition();
-
-    @media screen and (max-width: $bp-MD){
+    @media screen and (max-width: $bp-MD) {
         font-size: 17px;
     }
-
-    &:after{
+    &:after {
         content: '';
         width: 94%;
         height: 83%;
-        border: 1px solid #fff;
-        border-style: dotted;
+        background-image: url('../images/ico/dots.png');
+        background-size: 100% 100%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 24px;
     }
-
-    &:hover{
+    &:hover {
         @include scale(1.05);
         background-color: darken($color-secondary, 10);
     }
 }
 
-.btn-sm{
+.btn-sm {
     font-size: 13px;
 }
-
-
-button:focus{
+button:focus {
     outline: none;
 }

@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 10px 0;
+
+    &__brand{
+        width: 200px;
+    }
+}

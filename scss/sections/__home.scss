@@ -1,0 +1,159 @@
+.home-banner {
+    position: relative;
+    background-image: url("../images/backgrounds/bg-home.png");
+    background-size: cover;
+    height: 750px;
+    background-repeat: no-repeat;
+    margin-top: -2px;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: 1800px) {
+        height: 1000px;
+    }
+
+    @media screen and (max-width: $bp-XL) {
+        height: 680px;
+    }
+
+    @media screen and (max-width: 768px){
+        height: 560px;
+        background-position: -100px 0;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 430px) {
+        height: 500px;
+    }
+
+    @media screen and (max-width: 330px){
+        height: 450px;
+    }
+
+    &-curveb {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+        @media screen and (max-width: $bp-LG) {}
+
+    }
+
+    &-curvet {
+        position: absolute;
+        top: 0px;
+        left: -5px;
+        width: 102%;
+        z-index: 0;
+        @media screen and (max-width: $bp-LG) {}
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 140px;
+
+        @media screen and (min-width: 1800px) {
+            padding-top: 180px;
+        }
+
+        @media screen and (max-width: $bp-LG) {
+            align-items: center;
+            padding-top: 90px;
+        }
+    }
+
+    &__title {
+        font-size: 45px;
+        font-family: 'hoghfish';
+        color: $color-dark;
+        text-align: center;
+
+        @media screen and (max-width: $bp-XL) {
+            font-size: 35px;
+        }
+
+        @media screen and (max-width: $bp-LG) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: $bp-MD) {
+            font-size: 27px;
+        }
+
+        
+        @media screen and (max-width: 330px){
+            font-size: 24px;
+        }
+
+        .font-2 {
+            display: block;
+            font-size: 120px;
+            font-family: 'snaphand';
+            color: #11b1b0;
+            margin-top: -15px;
+            margin-right: -40px;
+            word-spacing: -15px;
+
+            @media screen and (max-width: $bp-XL) {
+                font-size: 105px;
+                margin-right: -10px;
+            }
+
+            @media screen and (max-width: $bp-MD) {
+                font-size: 74px;
+                margin-top: 5px;
+            }
+
+            
+            @media screen and (max-width: 330px){
+               font-size: 57px;
+            }
+        }
+
+        .font-3 {
+            display: block;
+            font-size: 74px;
+            font-family: 'exception';
+            margin-top: -15px;
+
+            @media screen and (max-width: $bp-XL) {
+                font-size: 65px;
+            }
+
+            @media screen and (max-width: $bp-MD) {
+                font-size: 50px;
+                margin-top: -4px;
+            }
+
+            
+            @media screen and (max-width: 330px){
+                font-size: 38px;
+                margin-top: 2px;
+            }
+        }
+    }
+
+    &__pack {
+        position: relative;
+        z-index: 3;
+        pointer-events: none;
+
+        .pack {
+            width: 800px;
+            margin-top: -50px;
+            margin-left: -100px;
+            @media screen and (max-width: $bp-XL) {
+                width: 700px;
+                margin-top: -40px;
+            }
+            @media screen and (max-width: $bp-LG) {
+                width: 100%;
+                margin-top: 40px;
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.modal-content {
+    border: 0;
+}
+
+.modal-dialog {
+    border-radius: 5px;
+    background-color: $color-secondary;
+    border: 2px solid $color-secondary;
+}
+
+.modal-header{
+    background-color: transparent;
+}
+
+.modal-body {
+    background-color: $color-secondary;
+    padding: 40px;
+
+    .inner-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .2px;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .close{
+        color: #fff;
+    }
+    
+    .inner-desc {
+        color: #fff;
+        font-size: 17px;
+    }
+}

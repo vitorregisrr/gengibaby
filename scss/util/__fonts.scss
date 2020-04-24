@@ -1,0 +1,75 @@
+// Ubuntu FONTS
+@font-face {
+    font-family: 'ubuntu-r';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ubuntu Regular'), 
+        url("../fonts/ubuntu/ubuntu-regular.ttf") format("ttf"),
+        url('../fonts/ubuntu/ubuntu-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'ubuntu-b';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ubuntu Bold'), 
+        url("../fonts/ubuntu/ubuntu-bold.ttf") format("ttf"),
+        url('../fonts/ubuntu/ubuntu-bold.woff') format('woff');
+}
+
+// SnapHand FONTS
+@font-face {
+    font-family: 'snaphand';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Snaphand'), 
+        url("../fonts/snaphand/snaphand.ttf") format("ttf"),
+        url('../fonts/snaphand/snaphand.woff') format('woff');
+}
+
+// Poppins FONTS
+@font-face {
+    font-family: 'poppins-b';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Bold'), 
+        url("../fonts/poppins/poppins-b.ttf") format("ttf"),
+        url('../fonts/poppins/poppins-b.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'poppins-sb';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins SemiBold'), 
+        url("../fonts/poppins/poppins-sb.ttf") format("ttf"),
+        url('../fonts/poppins/poppins-sb.woff') format('woff');
+}
+
+// The Only Exception FONTS
+@font-face {
+    font-family: 'exception';
+    font-style: normal;
+    font-weight: normal;
+    src: local('The Only Exception'), 
+        url("../fonts/exception/exception.ttf") format("ttf"),
+        url('../fonts/exception/exception.woff') format('woff');
+}
+
+// Hogfish FONTS
+@font-face {
+    font-family: 'hoghfish';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HoghFish'), 
+        url("../fonts/hogfish/hogfish.ttf") format("ttf"),
+        url('../fonts/hogfish/hogfish.woff') format('woff');
+}
+
+// Lemonism FONTS
+@font-face {
+    font-family: 'lemonism';
+    font-style: normal;
+    font-weight: normal;
+    src: local('exception'), 
+        url("../fonts/lemonism/lemonism.otf") format("opentype");
+}

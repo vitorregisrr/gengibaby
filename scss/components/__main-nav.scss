@@ -1,0 +1,261 @@
+.main-nav {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    
+    @media screen and (max-width: $bp-LG) {
+        padding: 20px 0 23px;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (max-width: $bp-LG) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__toggler {
+        position: relative;
+        display: none;
+        background: none;
+        border: none;
+
+        @media screen and (max-width: $bp-LG) {
+            &:after {
+                content: '';
+                position: absolute;
+                left: -14px;
+                top: -26px;
+                width: 150%;
+                height: 60px;
+            }
+        }
+
+        div {
+            display: block;
+            width: 29px;
+            height: 4px;
+            border-radius: 5px;
+            background: $color-primary;
+        }
+
+        div+div {
+            margin-top: 4px;
+            width: 21px;
+        }
+        @media screen and (max-width: $bp-LG) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    .main-nav__list {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+
+        @media screen and (max-width: $bp-LG) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 10;
+            padding-top: 0;
+            background: #fff;
+            transition: all 0.4s;
+
+            &.show {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+
+        &-close {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-family: 'snaphand';
+            font-size: 30px;
+            color: $color-primary;
+            font-weight: bold;
+            background: none;
+            border: none;
+            @media screen and (max-width: $bp-LG) {
+                display: block;
+            }
+        }
+    }
+
+    &__item {
+        text-align: center;
+        color: $color-primary;
+        font-family: 'snaphand';
+        font-size: 25px;
+        text-transform: lowercase;
+        transition: all 0.4s;
+
+        &:not(:last-child) {
+            margin-right: 39px;
+
+            @media screen and (max-width: $bp-LG){
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        &:first-child{
+            @media screen and (max-width: $bp-LG){
+                margin-top: -30px;
+            }
+        }
+
+        span {
+            display: block;
+            font-size: 22px;
+            color: $color-dark;
+            font-family: 'exception';
+            margin-top: -9px;
+            font-weight: bold;
+
+            &.d-inline {
+                margin-left: -5px;
+            }
+
+        }
+        img {
+            display: block;
+            width: 100px;
+            margin-top: -6px;
+        }
+
+        a{
+            color: inherit;
+        }
+
+        &:hover{
+            color: darken($color-primary, 10);
+            @include scale(1.07);
+        }
+    }
+
+    &__brand {
+        width: 210px;
+        margin: 30px auto 15px;
+
+        img {
+            width: 100%;
+        }
+        @media screen and (max-width: $bp-LG) {
+            margin: 0;
+            width: 110px;
+        }
+    }
+
+    &__scrolldown {
+        width: 165px;
+        height: 44px;
+        background: none;
+        border: none;
+        background-image: url('../images/ico/scroll-down.png');
+        background-size: 100% 100%;
+        margin-bottom: -25px;
+        pointer-events: none;
+
+        @media screen and (max-width: $bp-LG) {
+            margin-bottom: -120px;
+            width: 125px;
+            height: 32px;
+        }
+
+        @media screen and (max-width: $bp-MD) {
+            margin-left: -16%;
+        }
+    }
+
+    &__socials {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        display: block;
+
+        @media screen and (max-width: $bp-LG) {
+            bottom: -54px;
+            right: 15px;
+        }
+
+        @media screen and (max-width: $bp-MD) {
+            bottom: -49px;
+            right: 15px;
+        }
+
+        @media screen and (min-width: $bp-XL){
+            padding-right: 40px;
+        }
+
+        &-item {
+            position: relative;
+            border-radius: 50%;
+            width: 49px;
+            height: 49px;
+            background-color: #5398ec;
+            display: inline-block;
+            @include transition();
+
+            @media screen and (max-width: $bp-MD) {
+                width: 34px;
+                height: 34px;
+            }
+
+            &:first-child {
+                margin-right: 5px;
+
+                @media screen and (max-width: $bp-LG) {
+                    margin-right: 3px;
+                }
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 18px;
+                height: 18px;
+                background-image: url('../images/ico/facebook.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                @media screen and (max-width: $bp-LG) {
+                    width: 11px;
+                    height: 11px;
+                }
+            }
+
+            &.instagram {
+                background-color: #f0426b;
+                margin-right: -3px;
+                &:after {
+                    background-image: url('../images/ico/instagram.png');
+                }
+            }
+
+            &:hover{
+                @include scale(1.1);
+            }
+        }
+    }
+}

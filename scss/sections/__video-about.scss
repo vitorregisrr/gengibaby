@@ -1,0 +1,23 @@
+.video-about {
+    &__content {
+        padding: 0 80px;
+
+        @media screen and (max-width: $bp-LG){
+            margin-top: 70px;
+            padding: 0;
+        }
+    }
+
+    video {
+        width: 100%;
+
+    }
+    .plyr__control--overlaid {
+        background-color: #fff !important;
+        color: $color-secondary !important;
+
+        svg {
+            transform: scale(0.6);
+        }
+    }
+}

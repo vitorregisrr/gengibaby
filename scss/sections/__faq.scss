@@ -1,0 +1,142 @@
+.faq {
+    padding-top: 20px;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 70px;
+
+        @media screen and (max-width: $bp-MD){
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        position: relative;
+        font-family: 'lemonism';
+        color: $color-dark;
+        font-size: 143px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 100px;
+        }
+
+        .star {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("../images/ico/star-8.png");
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translateY(-40px);
+
+            @media screen and (max-width: $bp-MD) {
+                transform: translateY(-20px);
+                width: 15px;
+            }
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        font-family: 'exception';
+        color: #ee6f4c;
+        font-size: 41px;
+        text-transform: lowercase;
+        font-weight: bold;
+
+        @media screen and (max-width: $bp-MD) {
+            font-size: 30px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            background-image: url("../images/ico/line-2.png");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 8.2px;
+
+            @media screen and (max-width: $bp-MD) {
+                height: 7px;
+                bottom: -15px;
+            }
+            @media screen and (max-width: 330px) {
+                height: 4px;
+            }
+        }
+    }
+
+    &__item {
+
+        [aria-expanded="true"]{
+           &:after{
+            transform: rotate(-180deg) !important;
+           }
+        }
+
+        &-header {
+            position: relative;
+            font-family: 'lemonism';
+            color: #fff;
+            font-size: 32px;
+            padding: 5px 10px 10px 30px;
+            text-align: left;
+            width: 100%;
+            background-color: #00b2b0;
+            border: none;
+            font-weight: normal;
+            border-bottom: 2px solid #10d8d5;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 27px;
+                line-height: 1.2;
+                padding: 16px 54px 16px 30px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                right: 20px;
+                top: 22px;
+                background-image: url("../images/ico/scroll-top.png");
+                background-position: center center;
+                background-size: contain;
+                @include transition();
+
+                @media screen and (max-width: $bp-MD){
+                    top: 34px;
+                }
+            }
+
+            &.br {
+                border-radius: 15px 15px 0 0;
+            }
+            &:hover {
+                background-color: #0e9e9c;
+            }
+        }
+
+        &-body {
+            background-color: #c4dee088;
+            padding: 30px;
+            color: #2c3147;
+            font-size: 16px;
+            font-family: 'ubuntu-r';
+
+            @media screen and (max-width: $bp-MD){
+                padding: 20px 20px 20px 30px;
+            }
+        }
+    }
+}

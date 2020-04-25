@@ -63,10 +63,11 @@
         margin-bottom: 50px;
 
         &-title {
-            font-size: 40px;
-            color: #ee6f4c;
+            font-size: 43px;
+            color: #f06944;
             font-family: 'exception';
             text-transform: lowercase;
+            
             @media screen and (max-width: 330px) {
                 font-size: 30px;
             }

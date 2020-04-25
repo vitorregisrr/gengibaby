@@ -1,13 +1,18 @@
 .form-control{
     background-color: #ffffffc4;
-    height: 45px;
+    height: 40px;
     border-radius: 0;
     border: none;
-    color: rgb(24, 24, 24);
+    border-radius: 30px;
+    color: $color-primary;
+    font-family: 'poppins-sb';
+    font-weight: bold;
+    font-size: 11px;
     @include transition();
 
     &::placeholder{
-        color: rgba(24, 24, 24, 0.76);
+        color: #9acecf;
+        letter-spacing: 0.5px;
     }
 
     &:focus, &:active{

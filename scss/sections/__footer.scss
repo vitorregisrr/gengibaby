@@ -1,10 +1,92 @@
-.footer{
-    display: flex;
-    justify-content: center;
+.main-footer{
+    position: relative;
+    position: relative;
+    background-image: url("../images/backgrounds/bg-footer.png");
+    background-size: 100% 100%;
+    min-height: 300px;
+    background-repeat: no-repeat;
     margin-top: 50px;
-    padding: 10px 0;
+    padding: 80px 0 40px 0;
+    z-index: 5;
 
-    &__brand{
-        width: 200px;
+    &__scrolldown {
+        position: absolute;
+        left: 50%;
+        top: -10px;
+        transform: translateX(-50%);
+        width: 165px;
+        height: 44px;
+        background: none;
+        border: none;
+        background-image: url('../images/ico/scroll-down.png');
+        background-size: 100% 100%;
+
+
+        @media screen and (max-width: $bp-MD) {
+            width: 120px;
+            height: 30px;
+        }
     }
+
+    &__brand1{
+        width: 95%;
+        margin: 0 auto;
+        object-fit: contain;
+        margin-top: -20px;
+
+        @media screen and (max-width: $bp-LG){
+            width: 200px;
+            margin-top: -10px;
+        }
+    }
+
+    &__brand2{
+        width: 80%;
+        margin: 0 auto;
+
+        @media screen and (max-width: $bp-LG){
+            width: 280px;
+            margin: 50px 0;
+        }
+    }
+
+    &__newsletter{
+        max-width: 280px;
+
+        @media screen and (max-width: $bp-LG){
+            text-align: center;
+            max-width: none;
+
+            input{
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+
+        &-title{
+            padding-left: 12px;
+            font-family: 'exception';
+            font-size: 22px;
+            font-weight: bold;
+
+            span{
+                display: block;
+                font-family: 'lemonism';
+                font-size: 51px;
+                margin-top: -20px;
+            }
+        }
+    }
+
+    &__copyright{
+        border-top: 1px solid #9ecfd3;
+        margin: 0 40px;
+        font-family: 'poppins-b';
+        color: #99d4d8;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 35px;
+        padding-top: 20px;
+    }
+
 }

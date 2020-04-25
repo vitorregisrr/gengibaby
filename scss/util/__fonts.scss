@@ -37,6 +37,15 @@
 }
 
 @font-face {
+    font-family: 'poppins-b';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Bold'), 
+        url("../fonts/poppins/poppins-b.ttf") format("ttf"),
+        url('../fonts/poppins/poppins-b.woff') format('woff');
+}
+
+@font-face {
     font-family: 'poppins-sb';
     font-style: normal;
     font-weight: normal;

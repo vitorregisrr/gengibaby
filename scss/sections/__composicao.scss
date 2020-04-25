@@ -12,9 +12,10 @@
         span {
             display: block;
         }
+
         @media screen and (max-width: $bp-MD) {
             font-size: 65px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
 
         .sm {

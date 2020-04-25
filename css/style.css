@@ -438,6 +438,17 @@ button:focus {
   }
 }
 
+.main-nav .star-1 {
+  position: absolute;
+  right: -50px;
+  width: 140px;
+  height: 140px;
+  background-image: url(../images/ico/star-1.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .main-nav .container {
   position: relative;
   display: flex;
@@ -598,8 +609,8 @@ button:focus {
 }
 
 .main-nav__brand {
-  width: 210px;
-  margin: 30px auto 15px;
+  width: 180px;
+  margin: 15px auto 5px;
 }
 
 .main-nav__brand img {
@@ -1153,16 +1164,12 @@ button:focus {
 
 .home-banner__title .font-2 {
   display: block;
-  font-size: 120px;
+  font-size: 130px;
   font-family: 'snaphand';
   color: #11b1b0;
   margin-top: -15px;
   margin-right: -40px;
-  word-spacing: -15px;
-}
-
-.home-banner__title .font-2 small {
-  margin-left: -20px;
+  word-spacing: -30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1175,10 +1182,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   .home-banner__title .font-2 {
     font-size: 74px;
-    margin-top: 5px;
-  }
-  .home-banner__title .font-2 small {
-    margin-left: -10px;
+    margin-top: -5px;
   }
 }
 
@@ -1192,20 +1196,23 @@ button:focus {
   display: block;
   font-size: 74px;
   font-family: 'exception';
-  margin-top: -15px;
+  margin-top: -10px;
+  margin-left: 75px;
 }
 
 @media screen and (max-width: 1200px) {
   .home-banner__title .font-3 {
     font-size: 65px;
     margin-top: -10px;
+    margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .home-banner__title .font-3 {
     font-size: 50px;
-    margin-top: -4px;
+    margin-top: 2px;
+    margin-left: 0;
   }
 }
 
@@ -1223,8 +1230,8 @@ button:focus {
 }
 
 .home-banner__pack .pack {
-  width: 800px;
-  margin-top: -50px;
+  width: 810px;
+  margin-top: -46px;
   margin-left: -100px;
 }
 
@@ -1870,10 +1877,10 @@ button:focus {
 }
 
 .composicao__item-img {
-  width: 240px;
-  height: 240px;
+  width: 220px;
+  height: 220px;
   object-fit: contain;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2419,9 +2426,8 @@ button:focus {
   position: relative;
   background-image: url("../images/backgrounds/bg-footer.png");
   background-size: 100% 100%;
-  min-height: 300px;
   background-repeat: no-repeat;
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 80px 0 40px 0;
   z-index: 5;
 }

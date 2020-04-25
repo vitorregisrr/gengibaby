@@ -79,28 +79,24 @@
 
         .font-2 {
             display: block;
-            font-size: 120px;
+            font-size: 130px;
             font-family: 'snaphand';
             color: #11b1b0;
             margin-top: -15px;
             margin-right: -40px;
-            word-spacing: -15px;
+            word-spacing: -30px;
 
-            small {
-                margin-left: -20px;
-            }
+
             @media screen and (max-width: $bp-XL) {
                 font-size: 100px;
                 margin-right: -10px;
             }
+
             @media screen and (max-width: $bp-MD) {
                 font-size: 74px;
-                margin-top: 5px;
-
-                small {
-                    margin-left: -10px;
-                }
+                margin-top: -5px;
             }
+            
             @media screen and (max-width: 330px) {
                 font-size: 57px;
             }
@@ -110,15 +106,21 @@
             display: block;
             font-size: 74px;
             font-family: 'exception';
-            margin-top: -15px;
+            margin-top: -10px;
+            margin-left: 75px;
+
             @media screen and (max-width: $bp-XL) {
                 font-size: 65px;
                 margin-top: -10px;
+                margin-left: 20px;
             }
+            
             @media screen and (max-width: $bp-MD) {
                 font-size: 50px;
-                margin-top: -4px;
+                margin-top:  2px;
+                margin-left:0 ;
             }
+            
             @media screen and (max-width: 330px) {
                 font-size: 38px;
                 margin-top: 2px;
@@ -132,8 +134,8 @@
         pointer-events: none;
 
         .pack {
-            width: 800px;
-            margin-top: -50px;
+            width: 810px;
+            margin-top: -46px;
             margin-left: -100px;
 
             @media screen and (max-width: $bp-XL) {

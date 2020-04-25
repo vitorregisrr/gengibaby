@@ -7,6 +7,17 @@
         padding: 20px 0 23px;
     }
 
+    .star-1{
+        position: absolute;
+        right: -50px;
+        width: 140px;
+        height: 140px;
+        background-image: url(../images/ico/star-1.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
     .container {
         position: relative;
         display: flex;
@@ -151,8 +162,8 @@
     }
 
     &__brand {
-        width: 210px;
-        margin: 30px auto 15px;
+        width: 180px;
+        margin: 15px auto 5px;
 
         img {
             width: 100%;

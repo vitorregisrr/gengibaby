@@ -1,0 +1,105 @@
+.composicao {
+    &__title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'lemonism';
+        color: $color-dark;
+        font-size: 131px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        span {
+            display: block;
+        }
+        @media screen and (max-width: $bp-MD) {
+            font-size: 65px;
+            margin-bottom: 30px;
+        }
+
+        .sm {
+            font-size: 56px;
+            font-family: 'exception';
+            color: #00b2b0;
+            font-weight: bold;
+            margin-right: 310px;
+            margin-top: -16px;
+            @media screen and (max-width: $bp-MD) {
+                font-size: 32px;
+                margin-right: 155px;
+                margin-top: -5px;
+            }
+        }
+
+        .lg {
+            font-family: 'snaphand';
+            font-size: 135px;
+            word-spacing: -40px;
+            margin-top: -60px;
+            @media screen and (max-width: $bp-MD) {
+                font-size: 64px;
+                word-spacing: -10px;
+                margin-top: -30px;
+            }
+            @media screen and (max-width: 330px) {
+                font-size: 57px;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: $bp-MD){
+            margin-bottom: 40px;
+        }
+
+        &-img {
+            width: 240px;
+            height: 240px;
+            object-fit: contain;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: $bp-MD){
+                margin-bottom: 15px;
+                width: 190px;
+                height: 190px;
+            }
+        }
+
+        &-desc {
+            font-size: 32px;
+            font-family: 'lemonism';
+            text-align: center;
+            max-width: 310px;
+            margin: 0 auto;
+            line-height: 1.2;
+
+            @media screen and (max-width: $bp-MD){
+               font-size: 30px;
+            }
+
+            &.i-1 {
+                color: #5398ec;
+            }
+
+            &.i-2 {
+                color: #d26e4e;
+            }
+
+            &.i-3 {
+                color: #edb044;
+                width: 150%;
+            }
+
+            &.i-4 {
+                color: #a0bf52;
+            }
+        }
+
+    }
+}

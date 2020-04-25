@@ -6,27 +6,22 @@
     background-repeat: no-repeat;
     margin-top: -2px;
     margin-bottom: 80px;
-
     @media screen and (min-width: 1800px) {
         height: 1000px;
     }
-
     @media screen and (max-width: $bp-XL) {
         height: 680px;
     }
-
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
         height: 560px;
         background-position: -100px 0;
         margin-bottom: 50px;
     }
-
     @media screen and (max-width: 430px) {
         height: 500px;
         // background-position: -270px 0;
     }
-
-    @media screen and (max-width: 330px){
+    @media screen and (max-width: 330px) {
         height: 450px;
     }
 
@@ -43,7 +38,7 @@
 
     &-curvet {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: -5px;
         width: 102%;
         z-index: 0;
@@ -55,11 +50,9 @@
         flex-direction: column;
         align-items: flex-end;
         padding-top: 140px;
-
         @media screen and (min-width: 1800px) {
             padding-top: 180px;
         }
-
         @media screen and (max-width: $bp-LG) {
             align-items: center;
             padding-top: 90px;
@@ -71,21 +64,16 @@
         font-family: 'hoghfish';
         color: $color-dark;
         text-align: center;
-
         @media screen and (max-width: $bp-XL) {
-            font-size: 35px;
+            font-size: 36px;
         }
-
         @media screen and (max-width: $bp-LG) {
             text-align: center;
         }
-
         @media screen and (max-width: $bp-MD) {
             font-size: 27px;
         }
-
-        
-        @media screen and (max-width: 330px){
+        @media screen and (max-width: 330px) {
             font-size: 24px;
         }
 
@@ -98,19 +86,23 @@
             margin-right: -40px;
             word-spacing: -15px;
 
+            small {
+                margin-left: -20px;
+            }
             @media screen and (max-width: $bp-XL) {
-                font-size: 105px;
+                font-size: 100px;
                 margin-right: -10px;
             }
-
             @media screen and (max-width: $bp-MD) {
                 font-size: 74px;
                 margin-top: 5px;
-            }
 
-            
-            @media screen and (max-width: 330px){
-               font-size: 57px;
+                small {
+                    margin-left: -10px;
+                }
+            }
+            @media screen and (max-width: 330px) {
+                font-size: 57px;
             }
         }
 
@@ -119,18 +111,15 @@
             font-size: 74px;
             font-family: 'exception';
             margin-top: -15px;
-
             @media screen and (max-width: $bp-XL) {
                 font-size: 65px;
+                margin-top: -10px;
             }
-
             @media screen and (max-width: $bp-MD) {
                 font-size: 50px;
                 margin-top: -4px;
             }
-
-            
-            @media screen and (max-width: 330px){
+            @media screen and (max-width: 330px) {
                 font-size: 38px;
                 margin-top: 2px;
             }
@@ -146,10 +135,18 @@
             width: 800px;
             margin-top: -50px;
             margin-left: -100px;
+
             @media screen and (max-width: $bp-XL) {
                 width: 700px;
                 margin-top: -40px;
             }
+
+            @media screen and (max-width: 1200px) {
+                width: 660px;
+                margin-left: -65px;
+                margin-top: -20px;
+            }
+
             @media screen and (max-width: $bp-LG) {
                 width: 100%;
                 margin-top: 40px;

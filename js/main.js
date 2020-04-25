@@ -70,8 +70,8 @@
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href'))
                 .offset()
-                .top - 80
-        }, 500);
+                .top  + 10
+        }, 900);
     });
 
     window.dispatchEvent(new Event('resize'));

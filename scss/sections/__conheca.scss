@@ -11,11 +11,12 @@
 
     @media screen and (max-width: $bp-LG){
         padding: 70px 0 100px 0;
-        background-size: 100% 100%;
     }
 
     @media screen and (max-width: $bp-MD){
         padding: 100px 0;
+        background-size: 170% 100%;
+        background-position: center center;
     }
 
     &__title{
@@ -77,7 +78,7 @@
 
         img{
             width: 54%;
-            margin-bottom: 50px;
+            margin-top: -20px;
 
             @media screen and (max-width: $bp-LG){
                 width: 30%;

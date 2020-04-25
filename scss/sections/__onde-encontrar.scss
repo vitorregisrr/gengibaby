@@ -1,0 +1,71 @@
+.onde-encontrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("../images/backgrounds/bg-onde-encontrar.png");
+    background-size: 100% 100%;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding: 120px 0 0px;
+
+    @media screen and (max-width: $bp-MD){
+        background-size: 130% 100%;
+        background-position: center center;
+        padding-bottom: 0px;
+        padding-top: 90px;
+        margin-top: -10px;
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'exception';
+        color: $color-dark;
+        font-size: 107px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 60px;
+        }
+        .lg{
+            font-family: 'lemonism';
+            font-size: 121px;
+            margin-top: -80px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 80px;
+                margin-top: -50px;
+            }
+        }
+    }
+
+    &__main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .brand{
+            width: 300px;
+            margin-bottom: 40px;
+        }
+
+        .pack{
+            width: 700px;
+            margin-top: -110px;
+            margin-left: -420px;
+
+            @media screen and (max-width: 1200px){
+                width: 600px;
+                margin-top: -70px;
+                margin-left: -300px;
+
+                @media screen and (max-width: $bp-MD){
+                    width: 330px;
+                    margin: 30px auto 0 auto;
+                }
+            }
+        }
+    }
+}

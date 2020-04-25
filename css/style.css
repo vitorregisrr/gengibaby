@@ -332,6 +332,7 @@ textarea.form-control {
   background-color: #ee6f4c;
   color: #fff;
   text-transform: uppercase;
+  border: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -368,7 +369,8 @@ textarea.form-control {
 }
 
 .btn-sm {
-  font-size: 13px;
+  font-size: 12px;
+  padding: 7px 25px;
 }
 
 button:focus {
@@ -1080,7 +1082,7 @@ button:focus {
 
 .home-banner-curvet {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -5px;
   width: 102%;
   z-index: 0;
@@ -1115,7 +1117,7 @@ button:focus {
 
 @media screen and (max-width: 1200px) {
   .home-banner__title {
-    font-size: 35px;
+    font-size: 36px;
   }
 }
 
@@ -1147,9 +1149,13 @@ button:focus {
   word-spacing: -15px;
 }
 
+.home-banner__title .font-2 small {
+  margin-left: -20px;
+}
+
 @media screen and (max-width: 1200px) {
   .home-banner__title .font-2 {
-    font-size: 105px;
+    font-size: 100px;
     margin-right: -10px;
   }
 }
@@ -1158,6 +1164,9 @@ button:focus {
   .home-banner__title .font-2 {
     font-size: 74px;
     margin-top: 5px;
+  }
+  .home-banner__title .font-2 small {
+    margin-left: -10px;
   }
 }
 
@@ -1177,6 +1186,7 @@ button:focus {
 @media screen and (max-width: 1200px) {
   .home-banner__title .font-3 {
     font-size: 65px;
+    margin-top: -10px;
   }
 }
 
@@ -1210,6 +1220,14 @@ button:focus {
   .home-banner__pack .pack {
     width: 700px;
     margin-top: -40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home-banner__pack .pack {
+    width: 660px;
+    margin-left: -65px;
+    margin-top: -20px;
   }
 }
 
@@ -1465,13 +1483,14 @@ button:focus {
 @media screen and (max-width: 992px) {
   .conheca {
     padding: 70px 0 100px 0;
-    background-size: 100% 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .conheca {
     padding: 100px 0;
+    background-size: 170% 100%;
+    background-position: center center;
   }
 }
 
@@ -1541,7 +1560,7 @@ button:focus {
 
 .conheca__selo img {
   width: 54%;
-  margin-bottom: 50px;
+  margin-top: -20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1599,6 +1618,210 @@ button:focus {
 @media screen and (max-width: 768px) {
   .conheca__caption-desc {
     font-size: 18px;
+  }
+}
+
+.composicao__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'lemonism';
+  color: #0e314a;
+  font-size: 131px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.composicao__title span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .composicao__title {
+    font-size: 65px;
+    margin-bottom: 30px;
+  }
+}
+
+.composicao__title .sm {
+  font-size: 56px;
+  font-family: 'exception';
+  color: #00b2b0;
+  font-weight: bold;
+  margin-right: 310px;
+  margin-top: -16px;
+}
+
+@media screen and (max-width: 768px) {
+  .composicao__title .sm {
+    font-size: 32px;
+    margin-right: 155px;
+    margin-top: -5px;
+  }
+}
+
+.composicao__title .lg {
+  font-family: 'snaphand';
+  font-size: 135px;
+  word-spacing: -40px;
+  margin-top: -60px;
+}
+
+@media screen and (max-width: 768px) {
+  .composicao__title .lg {
+    font-size: 64px;
+    word-spacing: -10px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .composicao__title .lg {
+    font-size: 57px;
+  }
+}
+
+.composicao__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .composicao__item {
+    margin-bottom: 40px;
+  }
+}
+
+.composicao__item-img {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .composicao__item-img {
+    margin-bottom: 15px;
+    width: 190px;
+    height: 190px;
+  }
+}
+
+.composicao__item-desc {
+  font-size: 32px;
+  font-family: 'lemonism';
+  text-align: center;
+  max-width: 310px;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .composicao__item-desc {
+    font-size: 30px;
+  }
+}
+
+.composicao__item-desc.i-1 {
+  color: #5398ec;
+}
+
+.composicao__item-desc.i-2 {
+  color: #d26e4e;
+}
+
+.composicao__item-desc.i-3 {
+  color: #edb044;
+  width: 150%;
+}
+
+.composicao__item-desc.i-4 {
+  color: #a0bf52;
+}
+
+.onde-encontrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../images/backgrounds/bg-onde-encontrar.png");
+  background-size: 100% 100%;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  padding: 120px 0 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .onde-encontrar {
+    background-size: 130% 100%;
+    background-position: center center;
+    padding-bottom: 0px;
+    padding-top: 90px;
+    margin-top: -10px;
+  }
+}
+
+.onde-encontrar__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'exception';
+  color: #0e314a;
+  font-size: 107px;
+}
+
+@media screen and (max-width: 768px) {
+  .onde-encontrar__title {
+    font-size: 60px;
+  }
+}
+
+.onde-encontrar__title .lg {
+  font-family: 'lemonism';
+  font-size: 121px;
+  margin-top: -80px;
+}
+
+@media screen and (max-width: 768px) {
+  .onde-encontrar__title .lg {
+    font-size: 80px;
+    margin-top: -50px;
+  }
+}
+
+.onde-encontrar__main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.onde-encontrar__main .brand {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.onde-encontrar__main .pack {
+  width: 700px;
+  margin-top: -110px;
+  margin-left: -420px;
+}
+
+@media screen and (max-width: 1200px) {
+  .onde-encontrar__main .pack {
+    width: 600px;
+    margin-top: -70px;
+    margin-left: -300px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 768px) {
+  .onde-encontrar__main .pack {
+    width: 330px;
+    margin: 30px auto 0 auto;
   }
 }
 

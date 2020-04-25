@@ -1,0 +1,130 @@
+.conheca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("../images/backgrounds/bg-conheca.png");
+    background-size: 100% 100%;
+    min-height: 700px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+
+    @media screen and (max-width: $bp-LG){
+        padding: 70px 0 100px 0;
+        background-size: 100% 100%;
+    }
+
+    @media screen and (max-width: $bp-MD){
+        padding: 100px 0;
+    }
+
+    &__title{
+        position: relative;
+        font-family: 'exception';
+        color: $color-dark;
+        font-size: 40px;
+        margin-bottom: 80px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 25px;
+            margin-bottom: 60px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -22px;
+            left: 50.4%;
+            transform: translateX(-50%);
+            width: 100%;
+            background-image: url("../images/ico/line-3.png");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 33px;
+
+            @media screen and (max-width: $bp-MD) {
+                height: 22px;
+                bottom: -19px;
+            }
+        }
+        
+        span{
+            display: block;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        span.font-2{
+            display: block;
+            font-family: 'lemonism';
+            font-size: 107px;
+            text-align: center;
+            font-weight: normal;
+            margin-top: -40px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 75px;
+                margin-top: -30px;
+            }
+        }
+    }
+
+    &__selo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 54%;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: $bp-LG){
+                width: 30%;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                width: 35%;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: $bp-SM){
+                width: 50%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__caption{
+
+        @media screen and (max-width: $bp-LG){
+            text-align: center;
+        }
+
+        &-title{
+            font-family: 'lemonism';
+            color: #00b2b0;
+            font-size: 50px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 40px;
+            }
+        }
+
+        &-desc{
+            color: $color-dark;
+            font-family: 'ubuntu-r';
+            max-width: 640px;
+            font-size: 20px;
+
+            @media screen and (max-width: $bp-LG){
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 18px;
+            }
+        }
+    }
+}

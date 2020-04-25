@@ -1450,6 +1450,158 @@ button:focus {
   padding-top: 40px;
 }
 
+.conheca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../images/backgrounds/bg-conheca.png");
+  background-size: 100% 100%;
+  min-height: 700px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .conheca {
+    padding: 70px 0 100px 0;
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conheca {
+    padding: 100px 0;
+  }
+}
+
+.conheca__title {
+  position: relative;
+  font-family: 'exception';
+  color: #0e314a;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .conheca__title {
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+}
+
+.conheca__title:after {
+  content: '';
+  position: absolute;
+  bottom: -22px;
+  left: 50.4%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-image: url("../images/ico/line-3.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 33px;
+}
+
+@media screen and (max-width: 768px) {
+  .conheca__title:after {
+    height: 22px;
+    bottom: -19px;
+  }
+}
+
+.conheca__title span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.conheca__title span.font-2 {
+  display: block;
+  font-family: 'lemonism';
+  font-size: 107px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: -40px;
+}
+
+@media screen and (max-width: 768px) {
+  .conheca__title span.font-2 {
+    font-size: 75px;
+    margin-top: -30px;
+  }
+}
+
+.conheca__selo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conheca__selo img {
+  width: 54%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .conheca__selo img {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conheca__selo img {
+    width: 35%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .conheca__selo img {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .conheca__caption {
+    text-align: center;
+  }
+}
+
+.conheca__caption-title {
+  font-family: 'lemonism';
+  color: #00b2b0;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .conheca__caption-title {
+    font-size: 40px;
+  }
+}
+
+.conheca__caption-desc {
+  color: #0e314a;
+  font-family: 'ubuntu-r';
+  max-width: 640px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .conheca__caption-desc {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conheca__caption-desc {
+    font-size: 18px;
+  }
+}
+
 .dentinhos {
   position: relative;
 }
@@ -1466,6 +1618,15 @@ button:focus {
 @media screen and (max-width: 768px) {
   .dentinhos__title {
     font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .dentinhos__title {
+    font-size: 40px;
+  }
+  .dentinhos__title .star {
+    margin: 5px !important;
   }
 }
 
@@ -1487,6 +1648,12 @@ button:focus {
   .dentinhos__title:after {
     height: 5.4px;
     bottom: -19px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .dentinhos__title:after {
+    height: 4px;
   }
 }
 
@@ -1521,6 +1688,12 @@ button:focus {
   color: #ee6f4c;
   font-family: 'exception';
   text-transform: lowercase;
+}
+
+@media screen and (max-width: 330px) {
+  .dentinhos__header-title {
+    font-size: 30px;
+  }
 }
 
 .dentinhos__buttons {
@@ -1567,7 +1740,7 @@ button:focus {
   transform: translateX(-50%);
   width: 100%;
   height: 24px;
-  background-image: url(../images/ico/stars.png);
+  background-image: url("../images/ico/stars.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1653,10 +1826,22 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 330px) {
+  .dentinhos__main-caption {
+    font-size: 16px;
+  }
+}
+
 .dentinhos__main-caption h5 {
   color: #0e314a;
   font-size: 22px;
   font-family: 'ubuntu-b';
+}
+
+@media screen and (max-width: 768px) {
+  .dentinhos__main-caption h5 {
+    font-size: 20px;
+  }
 }
 
 .dentinhos__main-img {
@@ -1711,7 +1896,7 @@ button:focus {
 
 @media screen and (max-width: 1200px) {
   .dentinhos__footer {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
@@ -1747,20 +1932,21 @@ button:focus {
   color: #ee6f4c;
 }
 
-.dentinhos__footer-link .arrow-1, .dentinhos__footer-link .arrow-2 {
+.dentinhos__footer-link .arrow-1,
+.dentinhos__footer-link .arrow-2 {
   display: inline-block;
   height: 100%;
   width: 18px;
   height: 18px;
   background-position: center center;
   background-size: contain;
-  background-image: url(../images/ico/chevron-right.png);
+  background-image: url("../images/ico/chevron-right.png");
   background-repeat: no-repeat;
   margin-bottom: 7px;
 }
 
 .dentinhos__footer-link .arrow-2 {
-  background-image: url(../images/ico/chevron-left.png);
+  background-image: url("../images/ico/chevron-left.png");
 }
 
 .dentinhos__navs {
@@ -1799,7 +1985,7 @@ button:focus {
   transform: translate(-50%, -50%);
   width: 40%;
   height: 40%;
-  background-image: url(../images/ico/chevron-left.png);
+  background-image: url("../images/ico/chevron-left.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1807,7 +1993,7 @@ button:focus {
 
 .dentinhos__navs-item.right:after {
   left: 54%;
-  background-image: url(../images/ico/chevron-right.png);
+  background-image: url("../images/ico/chevron-right.png");
 }
 
 .dentinhos__navs-item:first-child {
@@ -1815,7 +2001,7 @@ button:focus {
 }
 
 .dentinhos__navs-item[data-disabled="true"] {
-  opacity: .3;
+  opacity: 0.3;
   pointer-events: none;
 }
 

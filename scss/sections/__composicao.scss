@@ -75,6 +75,15 @@
 
         span {
             display: block;
+
+            &:first-child{
+                @supports (-webkit-touch-callout: none) {
+                    /* CSS specific to iOS devices */ 
+                    @media screen and (max-width: 400px){
+                        margin-bottom: -15px;
+                    }
+                  }
+            }
         }
 
         @media screen and (max-width: $bp-MD) {
@@ -95,7 +104,7 @@
                 margin-right: 155px;
                 margin-top: -5px;
             }
-            
+
             @media screen and (max-width: 400px){
                 margin-top: -20px;
             }

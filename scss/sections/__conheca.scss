@@ -132,14 +132,14 @@
             background-position: center center;
             background-repeat: no-repeat;
             height: 33px;
-
+            
             @media screen and (max-width: $bp-MD) {
                 height: 22px;
                 bottom: -19px;
             }
-
+            
             @media screen and (max-width: 400px){
-                bottom: -5px;
+                bottom: -5px !important;
             }
         }
         

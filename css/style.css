@@ -1973,7 +1973,7 @@ button:focus {
 
 @media screen and (max-width: 400px) {
   .conheca__title:after {
-    bottom: -5px;
+    bottom: -5px !important;
   }
 }
 

@@ -51,6 +51,13 @@
             width: 280px;
             margin: 50px 0;
         }
+
+        @supports (-webkit-touch-callout: none) {
+            /* CSS specific to iOS devices */ 
+            @media screen and (max-width: 400px){
+               margin: 0;
+            }
+          }
     }
 
     &__newsletter{

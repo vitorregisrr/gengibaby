@@ -2457,12 +2457,12 @@ button:focus {
 }
 
 @supports (-webkit-touch-callout: none) {
-  .composicao__title span:first-child {
+  .composicao__title span.first {
     /* CSS specific to iOS devices */
   }
   @media screen and (max-width: 400px) {
-    .composicao__title span:first-child {
-      margin-bottom: -15px;
+    .composicao__title span.first {
+      margin-bottom: -15px !important;
     }
   }
 }
@@ -2703,6 +2703,11 @@ button:focus {
 @media screen and (max-width: 400px) {
   .onde-encontrar__title .lg {
     margin-top: -20px;
+  }
+  @supports (-webkit-touch-callout: none) {
+    .onde-encontrar__title .lg {
+      margin-top: 5px;
+    }
   }
 }
 
@@ -3278,6 +3283,17 @@ button:focus {
   .main-footer__brand2 {
     width: 280px;
     margin: 50px 0;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .main-footer__brand2 {
+    /* CSS specific to iOS devices */
+  }
+  @media screen and (max-width: 400px) {
+    .main-footer__brand2 {
+      margin: 0;
+    }
   }
 }
 

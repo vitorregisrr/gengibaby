@@ -89,10 +89,14 @@
             font-weight: bold;
             margin-right: 310px;
             margin-top: -16px;
+
             @media screen and (max-width: $bp-MD) {
                 font-size: 32px;
                 margin-right: 155px;
                 margin-top: -5px;
+            }
+            @media screen and (max-width: 400px){
+                margin-top: -20px;
             }
         }
 

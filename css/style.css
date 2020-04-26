@@ -2240,6 +2240,12 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .faq__subtitle {
+    margin-top: -20px;
+  }
+}
+
 .faq__subtitle:after {
   content: '';
   position: absolute;
@@ -2459,6 +2465,12 @@ button:focus {
     font-size: 32px;
     margin-right: 155px;
     margin-top: -5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .composicao__title .sm {
+    margin-top: -20px;
   }
 }
 

@@ -93,6 +93,7 @@
         @media screen and (max-width: $bp-MD){
             font-size: 60px;
         }
+
         .lg{
             font-family: 'lemonism';
             font-size: 121px;
@@ -101,6 +102,10 @@
             @media screen and (max-width: $bp-MD){
                 font-size: 80px;
                 margin-top: -50px;
+            }
+
+            @media screen and (max-width: 400px){
+                margin-top: -20px;
             }
         }
     }

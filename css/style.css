@@ -1989,7 +1989,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   .conheca__title span.font-2 {
     font-size: 75px;
-    margin-top: -30px;
+    margin-top: -20px;
   }
 }
 
@@ -2674,6 +2674,12 @@ button:focus {
   .onde-encontrar__title .lg {
     font-size: 80px;
     margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .onde-encontrar__title .lg {
+    margin-top: -20px;
   }
 }
 

@@ -1971,7 +1971,7 @@ button:focus {
 
 @media screen and (max-width: 400px) {
   .conheca__title:after {
-    bottom: -5px !important;
+    bottom: 0px !important;
   }
 }
 
@@ -1993,7 +1993,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   .conheca__title span.font-2 {
     font-size: 75px;
-    margin-top: -20px;
+    margin-top: -10px;
   }
 }
 

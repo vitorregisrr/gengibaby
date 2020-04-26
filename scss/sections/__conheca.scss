@@ -137,6 +137,10 @@
                 height: 22px;
                 bottom: -19px;
             }
+
+            @media screen and (max-width: 400px){
+                bottom: -5px;
+            }
         }
         
         span{

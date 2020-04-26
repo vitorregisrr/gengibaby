@@ -1971,6 +1971,12 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .conheca__title:after {
+    bottom: -5px;
+  }
+}
+
 .conheca__title span {
   display: block;
   text-align: center;

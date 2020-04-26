@@ -45,6 +45,7 @@
     &__brand2{
         width: 80%;
         margin: 0 auto;
+        object-fit: contain;
 
         @media screen and (max-width: $bp-LG){
             width: 280px;

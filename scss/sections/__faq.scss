@@ -119,6 +119,7 @@
         font-family: 'lemonism';
         color: $color-dark;
         font-size: 143px;
+        line-height: 1.2;
 
         @media screen and (max-width: $bp-MD){
             font-size: 100px;
@@ -151,6 +152,7 @@
 
         @media screen and (max-width: $bp-MD) {
             font-size: 30px;
+            line-height: 1;
         }
 
         &:after {
@@ -164,7 +166,7 @@
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
-            height: 8.2px;
+            height: 8.3px;
 
             @media screen and (max-width: $bp-MD) {
                 height: 7px;
@@ -233,7 +235,7 @@
 
         &-body {
             background-color: #c4dee088;
-            padding: 30px;
+            padding: 25px 30px;
             color: #2c3147;
             font-size: 16px;
             font-family: 'ubuntu-r';

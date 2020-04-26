@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     margin-top: -2px;
     margin-bottom: 80px;
+
     @media screen and (min-width: 1800px) {
         height: 1000px;
     }
@@ -23,6 +24,40 @@
     }
     @media screen and (max-width: 330px) {
         height: 450px;
+    }
+
+    .pena-3{
+        position: absolute;
+        left: -35px;
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/ico/pena-4.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+
+        @media screen and (max-width: $bp-MD){
+            display: none;
+        }
+    }
+
+    .pena-4{
+        position: absolute;
+        right: -70px;
+        width: 140px;
+        height: 140px;
+        background-image: url(../images/ico/pluma-3.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 10s;
+
+        @media screen and (max-width: $bp-MD){
+            width: 70px;
+            height: 70px;
+            right: -20px;
+        }
     }
 
     &-curveb {
@@ -44,6 +79,7 @@
         z-index: 0;
         @media screen and (max-width: $bp-LG) {}
     }
+
 
     &__caption {
         display: flex;

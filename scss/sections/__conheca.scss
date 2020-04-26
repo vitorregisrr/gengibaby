@@ -19,6 +19,95 @@
         background-position: center center;
     }
 
+    .star-1{
+        position: absolute;
+        left: 55px;
+        top: 0px;
+        width: 25px;
+        height: 25px;
+        background-image: url(../images/ico/star-1.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 30px;
+            height: 30px;
+            left: 30px;
+            top: 270px;
+        }
+    }
+
+    .star-2{
+        position: absolute;
+        left: -95px;
+        top: 240px;
+        width: 75px;
+        height: 75px;
+        background-image: url(../images/ico/star-9.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 20px;
+            height: 20px;
+            left: unset;
+            right: 20px;
+            top: 160px;
+        }
+    }
+
+    .star-3{
+        position: absolute;
+        right: 195px;
+        top: 160px;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/ico/star-5.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 7s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 30px;
+            height: 30px;
+            right: 30px;
+            top: -20px;
+        }
+    }
+
+    .star-4{
+        position: absolute;
+        right: -230px;
+        bottom: -30px;
+        width: 130px;
+        height: 130px;
+        background-image: url(../images/ico/star-10.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 4;
+    
+        @media screen and (max-width: 1300px){
+            right: -150px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            width: 80px;
+            height: 80px;
+            right: -20px;
+            bottom: -90px;
+        }
+    }
+
     &__title{
         position: relative;
         font-family: 'exception';
@@ -88,6 +177,7 @@
             @media screen and (max-width: $bp-MD){
                 width: 35%;
                 margin-bottom: 30px;
+                margin-top: 10px;
             }
 
             @media screen and (max-width: $bp-SM){

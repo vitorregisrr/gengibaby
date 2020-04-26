@@ -1,6 +1,67 @@
 .dentinhos {
     position: relative;
 
+    .star-1{
+        position: absolute;
+        left: 5px;
+        top: 240px;
+        width: 85px;
+        height: 85px;
+        background-image: url(../images/ico/star-12.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 30px;
+            height: 30px;
+            left: 30px;
+            top: 270px;
+        }
+    }
+
+    .star-2{
+        position: absolute;
+        right: -35px;
+        bottom: 140px;
+        width: 85px;
+        height: 85px;
+        background-image: url(../images/ico/star-9.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 8s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 30px;
+            height: 30px;
+            right:  40px;
+            bottom: -30px;
+        }
+    }
+
+    .star-3{
+        position: absolute;
+        left: 555px;
+        bottom: 130px;
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/ico/star-5.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 8s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+           left: 20px;
+           bottom: 20px;
+        }
+    }
+
     &__title {
         position: relative;
         font-size: 80px;
@@ -18,6 +79,7 @@
                 margin: 5px !important;
             }
         }
+
         &:after {
             content: '';
             position: absolute;
@@ -29,7 +91,8 @@
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
-            height: 9px;
+            height: 8.4px;
+
             @media screen and (max-width: $bp-MD) {
                 height: 5.4px;
                 bottom: -19px;

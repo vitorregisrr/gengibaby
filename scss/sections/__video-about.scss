@@ -1,6 +1,148 @@
 .video-about {
+    
+    .container{
+        position: relative;
+    }
+
+    .star-1{
+        position: absolute;
+        left: 80px;
+        top: 50px;
+        width: 35px;
+        height: 35px;
+        background-image: url(../images/ico/star-2.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 9s;
+
+        @media screen and (max-width: $bp-MD){
+            width: 40px;
+            height: 40px;
+            right: 70px;
+        }
+    }
+
+    .star-2{
+        position: absolute;
+        left: -70px;
+        top: 210px;
+        width: 25px;
+        height: 25px;
+        background-image: url(../images/ico/star-3.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 7s;
+
+        @media screen and (max-width: $bp-XL){
+            top: 170px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            width: 40px;
+            height: 40px;
+            right: 70px;
+            top: 100px;
+        }
+    }
+
+    .star-3{
+        position: absolute;
+        left: 72px;
+        top: 360px;
+        width: 55px;
+        height: 55px;
+        background-image: url(../images/ico/star-2.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 5s;
+        
+        @media screen and (max-width: $bp-XL){
+            top: 280px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            width: 40px;
+            height: 40px;
+            right: 70px;
+            top: 160px;
+        }
+    }
+
+    .star-4{
+        position: absolute;
+        right: -72px;
+        top: -10px;
+        width: 55px;
+        height: 55px;
+        background-image: url(../images/ico/star-1.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 7s;
+        
+        @media screen and (max-width: $bp-XL){
+            top: -20px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            width: 40px;
+            height: 40px;
+            right: 50px;
+            top: -40px;
+        }
+    }
+
+    .star-5{
+        position: absolute;
+        right: 102px;
+        top: 150px;
+        width: 27px;
+        height: 27px;
+        background-image: url(../images/ico/star-8.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 5s;
+        
+        @media screen and (max-width: $bp-XL){
+            top: 120px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            width: 40px;
+            height: 40px;
+            right: 70px;
+        }
+    }
+
+    .star-6{
+        position: absolute;
+        right: -22px;
+        top: 430px;
+        width: 42px;
+        height: 42px;
+        background-image: url(../images/ico/star-1.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 9s;
+        
+        @media screen and (max-width: $bp-XL){
+            top: 280px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            width: 40px;
+            height: 40px;
+            right: 70px;
+        }
+    }
+
     &__content {
-        padding: 0 120px;
+        padding: 0 160px;
 
         @media screen and (max-width: $bp-LG){
             margin-top: 70px;

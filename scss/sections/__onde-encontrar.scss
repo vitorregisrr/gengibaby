@@ -1,7 +1,4 @@
 .onde-encontrar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     background-image: url("../images/backgrounds/bg-onde-encontrar.png");
     background-size: 100% 100%;
@@ -9,6 +6,73 @@
     background-repeat: no-repeat;
     margin-top: 50px;
     padding: 120px 0 0px;
+
+    .container{
+        position: relative;
+    }
+
+    .star-1{
+        position: absolute;
+        left: 70px;
+        top: 50px;
+        width: 85px;
+        height: 85px;
+        background-image: url(../images/ico/star-10.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 30px;
+            height: 30px;
+            left: 30px;
+            top: 10px;
+        }
+    }
+
+    .star-2{
+        position: absolute;
+        right: 140px;
+        top: 31px;
+        width: 35px;
+        height: 35px;
+        background-image: url(../images/ico/star-10.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 4s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 20px;
+            height: 20px;
+            left: 60px;
+            top: 270px;
+        }
+    }
+
+    .star-3{
+        position: absolute;
+        right: -40px;
+        bottom: 131px;
+        width: 85px;
+        height: 85px;
+        background-image: url(../images/ico/star-1.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 4s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 60px;
+            height: 60px;
+            right: 40px;
+            bottom: 80px;
+        }
+    }
 
     @media screen and (max-width: $bp-MD){
         background-size: 130% 100%;

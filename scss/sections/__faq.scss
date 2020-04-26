@@ -1,5 +1,106 @@
 .faq {
     padding-top: 20px;
+    padding-bottom: 60px;
+
+    .container{
+        position: relative;
+    }
+
+    .star-1{
+        position: absolute;
+        left: -70px;
+        top: 50px;
+        width: 85px;
+        height: 85px;
+        background-image: url(../images/ico/star-10.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 4s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+            width: 50px;
+            height: 50px;
+            left: -10px;
+            top: 40px;
+        }
+    }
+
+    .star-2{
+        position: absolute;
+        right: 40px;
+        top: 240px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/ico/star-2.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+           display: none;
+        }
+    }
+
+    .star-3{
+        position: absolute;
+        right: -80px;
+        top: 540px;
+        width: 80px;
+        height: 80px;
+        background-image: url(../images/ico/star-2.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+           display: none;
+        }
+    }
+
+    .star-4{
+        position: absolute;
+        left: -60px;
+        top: 600px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/ico/star-5.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 6;
+    
+        @media screen and (max-width: $bp-MD){
+           display: none;
+        }
+    }
+
+    .star-5{
+        position: absolute;
+        left: -90px;
+        bottom: -50px;
+        width: 200px;
+        height: 200px;
+        background-image: url(../images/ico/star-13.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        z-index: 1;
+    
+        @media screen and (max-width: $bp-MD){
+           width: 150px;
+           height: 150px;
+           left: -50px;
+           bottom: -80px;
+        }
+    }
 
     &__header {
         display: flex;
@@ -76,6 +177,8 @@
     }
 
     &__item {
+        position: relative;
+        z-index: 3;
 
         [aria-expanded="true"]{
            &:after{
@@ -95,6 +198,7 @@
             border: none;
             font-weight: normal;
             border-bottom: 2px solid #10d8d5;
+            @include transition();
 
             @media screen and (max-width: $bp-MD){
                 font-size: 27px;
@@ -133,6 +237,10 @@
             color: #2c3147;
             font-size: 16px;
             font-family: 'ubuntu-r';
+
+            &.br{
+                border-radius: 0 0 15px 15px;
+            }
 
             @media screen and (max-width: $bp-MD){
                 padding: 20px 20px 20px 30px;

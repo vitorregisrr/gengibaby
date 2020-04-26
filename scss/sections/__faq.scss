@@ -125,6 +125,10 @@
             font-size: 100px;
         }
 
+        @supports (-webkit-touch-callout: none) {
+            margin-bottom: -20px;
+          }
+
         .star {
             display: inline-block;
             width: 18px;

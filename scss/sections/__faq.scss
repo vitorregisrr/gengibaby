@@ -116,13 +116,14 @@
 
     &__title {
         position: relative;
-        font-family: 'lemonism';
+        font-family: 'hoghfish';
         color: $color-dark;
-        font-size: 143px;
+        font-size: 83px;
         line-height: 1.2;
+        margin-top: 30px;
 
         @media screen and (max-width: $bp-MD){
-            font-size: 100px;
+            font-size: 60px;
         }
 
         @supports (-webkit-touch-callout: none) {
@@ -131,16 +132,16 @@
 
         .star {
             display: inline-block;
-            width: 18px;
-            height: 18px;
+            width: 21px;
+            height: 21px;
             background-image: url("../images/ico/star-8.png");
             background-position: center center;
             background-size: contain;
             background-repeat: no-repeat;
-            transform: translateY(-40px);
+            transform: translateY(-30px);
 
             @media screen and (max-width: $bp-MD) {
-                transform: translateY(-20px);
+                transform: translateY(-22px);
                 width: 15px;
             }
         }
@@ -177,7 +178,7 @@
             height: 8.3px;
 
             @media screen and (max-width: $bp-MD) {
-                height: 7px;
+                height: 6.6px;
                 bottom: -15px;
             }
 
@@ -199,10 +200,10 @@
 
         &-header {
             position: relative;
-            font-family: 'lemonism';
+            font-family: 'hoghfish';
             color: #fff;
-            font-size: 32px;
-            padding: 5px 10px 10px 30px;
+            font-size: 21px;
+            padding: 15px 10px 14px 30px;
             text-align: left;
             width: 100%;
             background-color: #00b2b0;
@@ -212,8 +213,8 @@
             @include transition();
 
             @media screen and (max-width: $bp-MD){
-                font-size: 27px;
-                line-height: 1.2;
+                font-size: 17px;
+                line-height: 1.6;
                 padding: 16px 54px 16px 30px;
             }
 
@@ -235,7 +236,7 @@
             }
 
             &.br {
-                border-radius: 15px 15px 0 0;
+                border-radius: 110 15px 0 0;
             }
             &:hover {
                 background-color: #0e9e9c;

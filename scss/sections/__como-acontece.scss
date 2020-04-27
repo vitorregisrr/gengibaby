@@ -193,10 +193,10 @@
         &-title {
             position: relative;
             color: #00b2b0;
-            font-family: 'lemonism';
+            font-family: 'hoghfish';
             text-transform: uppercase;
-            font-size: 39px;
-            margin-top: 10px;
+            font-size: 28px;
+            margin-top: 16px;
 
             span {
                 position: relative;
@@ -218,8 +218,10 @@
                 opacity: 0;
                 transition: all 0.4s;
             }
+
             @media screen and (max-width: $bp-MD) {
-                }
+                font-size: 24px;
+            }
         }
     }
 

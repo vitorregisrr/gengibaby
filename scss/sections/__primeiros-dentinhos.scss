@@ -64,20 +64,18 @@
 
     &__title {
         position: relative;
-        font-size: 80px;
+        font-size: 50px;
         color: #00b2b0;
-        font-family: 'lemonism';
+        font-family: 'hoghfish';
         text-align: center;
         margin-bottom: 55px;
-        @media screen and (max-width: $bp-MD) {
-            font-size: 50px;
-        }
-        @media screen and (max-width: 330px) {
-            font-size: 40px;
 
-            .star {
-                margin: 5px !important;
-            }
+        @media screen and (max-width: $bp-MD) {
+            font-size: 30px;
+        }
+        
+        @media screen and (max-width: 330px) {
+            font-size: 20px;
         }
 
         &:after {
@@ -110,9 +108,10 @@
             background-position: center center;
             background-size: contain;
             background-repeat: no-repeat;
-            transform: translateY(20px);
+            transform: translateY(6px);
+
             @media screen and (max-width: $bp-MD) {
-                transform: translateY(14px);
+                transform: translateY(4px);
                 width: 15px;
             }
         }
@@ -223,12 +222,14 @@
         }
 
         &-title {
-            font-family: 'lemonism';
-            font-size: 80px;
+            font-family: 'hoghfish';
+            font-size: 60px;
             color: #ee6f4c;
             margin-bottom: 15px;
+
             @media screen and (max-width: $bp-LG) {
-                font-size: 70px;
+                font-size: 44px;
+                margin-top: 23px;
                 text-align: center;
             }
         }
@@ -306,13 +307,15 @@
         &-link {
             display: block;
             color: #2c3147;
-            font-size: 54px;
-            font-family: 'lemonism';
-            margin-left: 40px;
+            font-size: 40px;
+            font-family: 'hoghfish';
+            margin-left: 23px;
             @include transition();
+
             @media screen and (max-width: $bp-LG) {
-                font-size: 44px;
+                font-size: 30px;
                 margin-left: 0;
+                margin-top: 20px;
                 width: 100%;
                 text-align: center;
             }

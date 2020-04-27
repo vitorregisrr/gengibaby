@@ -73,12 +73,3 @@
         url("../fonts/hogfish/hogfish.ttf") format("ttf"),
         url('../fonts/hogfish/hogfish.woff') format('woff');
 }
-
-// Lemonism FONTS
-@font-face {
-    font-family: 'lemonism';
-    font-style: normal;
-    font-weight: normal;
-    src: local('exception'), 
-        url("../fonts/lemonism/lemonism.otf") format("opentype");
-}

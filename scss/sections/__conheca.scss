@@ -116,7 +116,7 @@
         margin-bottom: 80px;
 
         @media screen and (max-width: $bp-MD){
-            font-size: 25px;
+            font-size: 30px;
             margin-bottom: 60px;
         }
 
@@ -151,15 +151,15 @@
 
         span.font-2{
             display: block;
-            font-family: 'lemonism';
-            font-size: 107px;
+            font-family: 'hoghfish';
+            font-size: 72px;
             text-align: center;
             font-weight: normal;
-            margin-top: -40px;
+            margin-top: -10px;
 
             @media screen and (max-width: $bp-MD){
-                font-size: 75px;
-                margin-top: -10px;
+                font-size: 57px;
+                margin-top: -5px;
             }
         }
     }
@@ -198,12 +198,12 @@
         }
 
         &-title{
-            font-family: 'lemonism';
+            font-family: 'hoghfish';
             color: #00b2b0;
-            font-size: 50px;
+            font-size: 37px;
 
             @media screen and (max-width: $bp-MD){
-                font-size: 40px;
+                font-size: 30px;
             }
         }
 

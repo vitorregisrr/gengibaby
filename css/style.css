@@ -231,13 +231,6 @@ b {
   src: local("HoghFish"), url("../fonts/hogfish/hogfish.ttf") format("ttf"), url("../fonts/hogfish/hogfish.woff") format("woff");
 }
 
-@font-face {
-  font-family: 'lemonism';
-  font-style: normal;
-  font-weight: normal;
-  src: local("exception"), url("../fonts/lemonism/lemonism.otf") format("opentype");
-}
-
 .form-control {
   background-color: #ffffff;
   height: 35px;
@@ -1734,10 +1727,10 @@ button:focus {
 .como-acontece__item-title {
   position: relative;
   color: #00b2b0;
-  font-family: 'lemonism';
+  font-family: 'hoghfish';
   text-transform: uppercase;
-  font-size: 39px;
-  margin-top: 10px;
+  font-size: 28px;
+  margin-top: 16px;
 }
 
 .como-acontece__item-title span {
@@ -1759,6 +1752,12 @@ button:focus {
   z-index: 1;
   opacity: 0;
   transition: all 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .como-acontece__item-title {
+    font-size: 24px;
+  }
 }
 
 .como-acontece__tab {
@@ -1943,7 +1942,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .conheca__title {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 60px;
   }
 }
@@ -1983,17 +1982,17 @@ button:focus {
 
 .conheca__title span.font-2 {
   display: block;
-  font-family: 'lemonism';
-  font-size: 107px;
+  font-family: 'hoghfish';
+  font-size: 72px;
   text-align: center;
   font-weight: normal;
-  margin-top: -40px;
+  margin-top: -10px;
 }
 
 @media screen and (max-width: 768px) {
   .conheca__title span.font-2 {
-    font-size: 75px;
-    margin-top: -10px;
+    font-size: 57px;
+    margin-top: -5px;
   }
 }
 
@@ -2037,14 +2036,14 @@ button:focus {
 }
 
 .conheca__caption-title {
-  font-family: 'lemonism';
+  font-family: 'hoghfish';
   color: #00b2b0;
-  font-size: 50px;
+  font-size: 37px;
 }
 
 @media screen and (max-width: 768px) {
   .conheca__caption-title {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -2198,15 +2197,16 @@ button:focus {
 
 .faq__title {
   position: relative;
-  font-family: 'lemonism';
+  font-family: 'hoghfish';
   color: #0e314a;
-  font-size: 143px;
+  font-size: 83px;
   line-height: 1.2;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
   .faq__title {
-    font-size: 100px;
+    font-size: 60px;
   }
 }
 
@@ -2218,18 +2218,18 @@ button:focus {
 
 .faq__title .star {
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   background-image: url("../images/ico/star-8.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  transform: translateY(-40px);
+  transform: translateY(-30px);
 }
 
 @media screen and (max-width: 768px) {
   .faq__title .star {
-    transform: translateY(-20px);
+    transform: translateY(-22px);
     width: 15px;
   }
 }
@@ -2272,7 +2272,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .faq__subtitle:after {
-    height: 7px;
+    height: 6.6px;
     bottom: -15px;
   }
 }
@@ -2294,10 +2294,10 @@ button:focus {
 
 .faq__item-header {
   position: relative;
-  font-family: 'lemonism';
+  font-family: 'hoghfish';
   color: #fff;
-  font-size: 32px;
-  padding: 5px 10px 10px 30px;
+  font-size: 21px;
+  padding: 15px 10px 14px 30px;
   text-align: left;
   width: 100%;
   background-color: #00b2b0;
@@ -2313,8 +2313,8 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .faq__item-header {
-    font-size: 27px;
-    line-height: 1.2;
+    font-size: 17px;
+    line-height: 1.6;
     padding: 16px 54px 16px 30px;
   }
 }
@@ -2343,7 +2343,7 @@ button:focus {
 }
 
 .faq__item-header.br {
-  border-radius: 15px 15px 0 0;
+  border-radius: 110 15px 0 0;
 }
 
 .faq__item-header:hover {
@@ -2370,6 +2370,13 @@ button:focus {
 
 .composicao {
   position: relative;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .composicao {
+    margin-top: 30px;
+  }
 }
 
 .composicao .container {
@@ -2443,9 +2450,9 @@ button:focus {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'lemonism';
+  font-family: 'hoghfish';
   color: #0e314a;
-  font-size: 131px;
+  font-size: 84px;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -2467,7 +2474,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .composicao__title {
-    font-size: 65px;
+    font-size: 45px;
     margin-bottom: 50px;
   }
 }
@@ -2478,7 +2485,7 @@ button:focus {
   color: #00b2b0;
   font-weight: bold;
   margin-right: 310px;
-  margin-top: -16px;
+  margin-top: -6px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2499,7 +2506,7 @@ button:focus {
   font-family: 'snaphand';
   font-size: 135px;
   word-spacing: -40px;
-  margin-top: -60px;
+  margin-top: -65px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2546,17 +2553,17 @@ button:focus {
 }
 
 .composicao__item-desc {
-  font-size: 32px;
-  font-family: 'lemonism';
+  font-size: 19px;
+  font-family: 'hoghfish';
   text-align: center;
   max-width: 310px;
   margin: 0 auto;
-  line-height: 1.2;
+  letter-spacing: 1.2;
 }
 
 @media screen and (max-width: 768px) {
   .composicao__item-desc {
-    font-size: 30px;
+    font-size: 18px;
   }
 }
 
@@ -2686,15 +2693,15 @@ button:focus {
 }
 
 .onde-encontrar__title .lg {
-  font-family: 'lemonism';
-  font-size: 121px;
-  margin-top: -80px;
+  font-family: 'hoghfish';
+  font-size: 81px;
+  margin-top: -41px;
 }
 
 @media screen and (max-width: 768px) {
   .onde-encontrar__title .lg {
-    font-size: 80px;
-    margin-top: -50px;
+    font-size: 50px;
+    margin-top: -40px;
   }
 }
 
@@ -2814,25 +2821,22 @@ button:focus {
 
 .dentinhos__title {
   position: relative;
-  font-size: 80px;
+  font-size: 50px;
   color: #00b2b0;
-  font-family: 'lemonism';
+  font-family: 'hoghfish';
   text-align: center;
   margin-bottom: 55px;
 }
 
 @media screen and (max-width: 768px) {
   .dentinhos__title {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 330px) {
   .dentinhos__title {
-    font-size: 40px;
-  }
-  .dentinhos__title .star {
-    margin: 5px !important;
+    font-size: 20px;
   }
 }
 
@@ -2871,12 +2875,12 @@ button:focus {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  transform: translateY(20px);
+  transform: translateY(6px);
 }
 
 @media screen and (max-width: 768px) {
   .dentinhos__title .star {
-    transform: translateY(14px);
+    transform: translateY(4px);
     width: 15px;
   }
 }
@@ -3003,15 +3007,16 @@ button:focus {
 }
 
 .dentinhos__main-title {
-  font-family: 'lemonism';
-  font-size: 80px;
+  font-family: 'hoghfish';
+  font-size: 60px;
   color: #ee6f4c;
   margin-bottom: 15px;
 }
 
 @media screen and (max-width: 992px) {
   .dentinhos__main-title {
-    font-size: 70px;
+    font-size: 44px;
+    margin-top: 23px;
     text-align: center;
   }
 }
@@ -3115,9 +3120,9 @@ button:focus {
 .dentinhos__footer-link {
   display: block;
   color: #2c3147;
-  font-size: 54px;
-  font-family: 'lemonism';
-  margin-left: 40px;
+  font-size: 40px;
+  font-family: 'hoghfish';
+  margin-left: 23px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -3127,8 +3132,9 @@ button:focus {
 
 @media screen and (max-width: 992px) {
   .dentinhos__footer-link {
-    font-size: 44px;
+    font-size: 30px;
     margin-left: 0;
+    margin-top: 20px;
     width: 100%;
     text-align: center;
   }
@@ -3290,7 +3296,7 @@ button:focus {
   }
   @media screen and (max-width: 400px) {
     .main-footer__brand2 {
-      margin: 0;
+      margin: 0 !important;
     }
   }
 }
@@ -3319,7 +3325,7 @@ button:focus {
 
 .main-footer__newsletter-title span {
   display: block;
-  font-family: 'lemonism';
+  font-family: 'hoghfish';
   font-size: 51px;
   margin-top: -20px;
 }

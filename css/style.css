@@ -2711,7 +2711,7 @@ button:focus {
   }
   @supports (-webkit-touch-callout: none) {
     .onde-encontrar__title .lg {
-      margin-top: 5px;
+      margin-top: 45px;
     }
   }
 }

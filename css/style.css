@@ -2707,7 +2707,7 @@ button:focus {
 
 @media screen and (max-width: 400px) {
   .onde-encontrar__title .lg {
-    margin-top: -20px;
+    margin-top: -7px;
   }
   @supports (-webkit-touch-callout: none) {
     .onde-encontrar__title .lg {

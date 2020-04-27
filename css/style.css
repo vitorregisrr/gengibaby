@@ -2375,7 +2375,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .composicao {
-    margin-top: 13px;
+    margin-top: 0px;
   }
 }
 

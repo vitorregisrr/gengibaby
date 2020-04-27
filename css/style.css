@@ -1992,7 +1992,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   .conheca__title span.font-2 {
     font-size: 57px;
-    margin-top: -5px;
+    margin-top: 10px;
   }
 }
 
@@ -2375,7 +2375,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .composicao {
-    margin-top: 30px;
+    margin-top: 13px;
   }
 }
 
@@ -2498,7 +2498,7 @@ button:focus {
 
 @media screen and (max-width: 400px) {
   .composicao__title .sm {
-    margin-top: -20px;
+    margin-top: -17px;
   }
 }
 
@@ -2513,7 +2513,7 @@ button:focus {
   .composicao__title .lg {
     font-size: 64px;
     word-spacing: -10px;
-    margin-top: -30px;
+    margin-top: -25px;
   }
 }
 

@@ -376,7 +376,7 @@ textarea.form-control {
 
 .btn-sm {
   font-size: 12px;
-  padding: 9px 24px;
+  padding: 7.7px 24px;
 }
 
 button:focus {
@@ -3326,8 +3326,8 @@ button:focus {
 .main-footer__newsletter-title span {
   display: block;
   font-family: 'hoghfish';
-  font-size: 51px;
-  margin-top: -20px;
+  font-size: 35px;
+  margin-top: -4px;
 }
 
 .main-footer__copyright {

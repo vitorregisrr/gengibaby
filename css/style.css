@@ -2252,7 +2252,7 @@ button:focus {
 
 @media screen and (max-width: 400px) {
   .faq__subtitle {
-    margin-top: -20px;
+    margin-top: -14px;
   }
 }
 

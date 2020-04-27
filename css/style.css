@@ -3290,10 +3290,15 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 400px) {
+@supports (-webkit-touch-callout: none) {
   .main-footer__brand2 {
-    margin: 0 !important;
-    max-height: 290px;
+    /* CSS specific to iOS devices */
+  }
+  @media screen and (max-width: 400px) {
+    .main-footer__brand2 {
+      margin: 0 !important;
+      max-height: 290px;
+    }
   }
 }
 

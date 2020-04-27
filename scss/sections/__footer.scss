@@ -52,10 +52,13 @@
             margin: 50px 0;
         }
 
-        @media screen and (max-width: 400px){
-           margin: 0 !important;
-           max-height: 290px;
-        }
+        @supports (-webkit-touch-callout: none) {
+            /* CSS specific to iOS devices */ 
+            @media screen and (max-width: 400px){
+               margin: 0 !important;
+               max-height: 290px;
+            }
+          }
     }
 
     &__newsletter{

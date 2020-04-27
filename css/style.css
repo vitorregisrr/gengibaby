@@ -3330,6 +3330,12 @@ button:focus {
   margin-top: -4px;
 }
 
+@media screen and (max-width: 400px) {
+  .main-footer__newsletter-title span {
+    margin-top: 6px;
+  }
+}
+
 .main-footer__copyright {
   border-top: 1px solid #9ecfd3;
   margin: 0 40px;

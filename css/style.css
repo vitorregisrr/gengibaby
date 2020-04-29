@@ -1966,7 +1966,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   .conheca__title:after {
     height: 26px;
-    bottom: -24px;
+    bottom: -18px;
     line-height: 1.2 !important;
   }
 }

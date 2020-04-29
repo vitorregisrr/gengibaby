@@ -100,6 +100,7 @@
         font-family: 'hoghfish';
         color: $color-dark;
         text-align: center;
+
         @media screen and (max-width: $bp-XL) {
             font-size: 36px;
         }
@@ -121,7 +122,6 @@
             margin-top: -15px;
             margin-right: -40px;
             word-spacing: -30px;
-
 
             @media screen and (max-width: $bp-XL) {
                 font-size: 100px;
@@ -186,9 +186,9 @@
             }
 
             @media screen and (max-width: $bp-LG) {
-                width: 100%;
-                margin-top: 40px;
-                margin-left: 0;
+                width: 104%;
+                margin-left: -3%;
+                margin-top: 44px;
             }
         }
     }

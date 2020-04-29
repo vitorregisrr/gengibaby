@@ -1331,9 +1331,9 @@ button:focus {
 
 @media screen and (max-width: 992px) {
   .home-banner__pack .pack {
-    width: 100%;
-    margin-top: 40px;
-    margin-left: 0;
+    width: 104%;
+    margin-left: -3%;
+    margin-top: 44px;
   }
 }
 
@@ -1968,12 +1968,6 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .conheca__title:after {
-    bottom: 0px !important;
-  }
-}
-
 .conheca__title span {
   display: block;
   text-align: center;
@@ -1992,7 +1986,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   .conheca__title span.font-2 {
     font-size: 57px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 }
 
@@ -2247,12 +2241,7 @@ button:focus {
   .faq__subtitle {
     font-size: 30px;
     line-height: 1;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .faq__subtitle {
-    margin-top: -14px;
+    margin-top: 13px;
   }
 }
 
@@ -2461,17 +2450,6 @@ button:focus {
   display: block;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .composicao__title span.first {
-    /* CSS specific to iOS devices */
-  }
-  @media screen and (max-width: 400px) {
-    .composicao__title span.first {
-      margin-bottom: -15px !important;
-    }
-  }
-}
-
 @media screen and (max-width: 768px) {
   .composicao__title {
     font-size: 45px;
@@ -2491,14 +2469,8 @@ button:focus {
 @media screen and (max-width: 768px) {
   .composicao__title .sm {
     font-size: 32px;
-    margin-right: 155px;
-    margin-top: -5px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .composicao__title .sm {
-    margin-top: -17px;
+    margin-right: 165px;
+    margin-top: -2px;
   }
 }
 
@@ -2513,7 +2485,7 @@ button:focus {
   .composicao__title .lg {
     font-size: 64px;
     word-spacing: -10px;
-    margin-top: -25px;
+    margin-top: -28px;
   }
 }
 

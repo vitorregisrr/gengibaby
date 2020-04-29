@@ -105,15 +105,8 @@
 
             @media screen and (max-width: $bp-MD){
                 font-size: 50px;
-                margin-top: -40px;
-            }
-
-            @media screen and (max-width: 400px){
-                margin-top: -7px;
-
-                @supports (-webkit-touch-callout: none) {
-                        margin-top: 45px;
-                  }
+                margin-top: -22px;
+                line-height: 1.2 !important;
             }
         }
     }

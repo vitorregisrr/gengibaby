@@ -1945,6 +1945,7 @@ button:focus {
   .conheca__title {
     font-size: 30px;
     margin-bottom: 60px;
+    line-height: 1.2 !important;
   }
 }
 
@@ -1966,6 +1967,7 @@ button:focus {
   .conheca__title:after {
     height: 26px;
     bottom: -19px;
+    line-height: 1.2 !important;
   }
 }
 
@@ -1988,6 +1990,7 @@ button:focus {
   .conheca__title span.font-2 {
     font-size: 57px;
     margin-top: 0px;
+    line-height: 1.2 !important;
   }
 }
 
@@ -2202,6 +2205,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   .faq__title {
     font-size: 60px;
+    line-height: 1 !important;
   }
 }
 
@@ -2241,7 +2245,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   .faq__subtitle {
     font-size: 30px;
-    line-height: 1;
+    line-height: 1 !important;
     margin-top: 13px;
   }
 }
@@ -2455,6 +2459,7 @@ button:focus {
   .composicao__title {
     font-size: 45px;
     margin-bottom: 50px;
+    line-height: 1.2 !important;
   }
 }
 
@@ -2472,6 +2477,7 @@ button:focus {
     font-size: 32px;
     margin-right: 165px;
     margin-top: -2px;
+    line-height: 1.2 !important;
   }
 }
 
@@ -2487,6 +2493,7 @@ button:focus {
     font-size: 64px;
     word-spacing: -10px;
     margin-top: -28px;
+    line-height: 1.2 !important;
   }
 }
 
@@ -2678,18 +2685,8 @@ button:focus {
 @media screen and (max-width: 768px) {
   .onde-encontrar__title .lg {
     font-size: 50px;
-    margin-top: -40px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .onde-encontrar__title .lg {
-    margin-top: -7px;
-  }
-  @supports (-webkit-touch-callout: none) {
-    .onde-encontrar__title .lg {
-      margin-top: 45px;
-    }
+    margin-top: -22px;
+    line-height: 1.2 !important;
   }
 }
 

@@ -3306,7 +3306,7 @@ button:focus {
   margin-top: -4px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   .main-footer__newsletter-title span {
     margin-top: 12px;
   }

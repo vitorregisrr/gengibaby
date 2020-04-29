@@ -86,7 +86,7 @@
                 font-size: 35px;
                 margin-top: -4px;
 
-                @media screen and (max-width: 400px){
+                @media screen and (max-width: $bp-MD){
                     margin-top: 12px;
                 }
             }

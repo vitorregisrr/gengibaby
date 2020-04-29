@@ -92,6 +92,7 @@
 
         @media screen and (max-width: $bp-MD){
             font-size: 60px;
+            line-height: 60px !important;
         }
 
         span{
@@ -106,7 +107,7 @@
             @media screen and (max-width: $bp-MD){
                 font-size: 50px;
                 margin-top: -22px;
-                line-height: 1.2 !important;
+                line-height: 78px !important;
             }
         }
     }

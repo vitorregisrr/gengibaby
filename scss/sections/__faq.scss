@@ -124,7 +124,7 @@
 
         @media screen and (max-width: $bp-MD){
             font-size: 60px;
-            line-height: 1 !important;
+            line-height: 50px !important;
         }
 
         @supports (-webkit-touch-callout: none) {
@@ -158,7 +158,7 @@
 
         @media screen and (max-width: $bp-MD) {
             font-size: 30px;
-            line-height: 1 !important;
+            line-height: 30px !important;
             margin-top: 13px;
         }
 

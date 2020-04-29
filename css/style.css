@@ -2692,6 +2692,10 @@ button:focus {
   }
 }
 
+.onde-encontrar__title span {
+  display: block;
+}
+
 .onde-encontrar__title .lg {
   font-family: 'hoghfish';
   font-size: 81px;
